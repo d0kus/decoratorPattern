@@ -9,14 +9,16 @@ import Decorator.WhipDecorator;
 
 public class Main {
     public static void printOrder(Coffee coffee){
-        System.out.println("Заказ:  " + coffee.getDescription());
-        System.out.println("Итого:  $" + coffee.getCost());
+        System.out.println("Order:  " + coffee.getDescription());
+        System.out.println("Cost:  $" + coffee.getCost());
     }
 
     public static void main(String[] args){
         System.out.println("Simple coffee");
         Coffee coffee1 = new SimpleCoffee();
         printOrder(coffee1);
+
+
 
         System.out.println("Simple coffee with milk and sugar");
         Coffee coffee2 = new SimpleCoffee();
